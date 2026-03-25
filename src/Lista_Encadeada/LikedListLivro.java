@@ -1,3 +1,5 @@
+package Lista_Encadeada;
+
 public class LikedListLivro {
     private Node head;
 
@@ -30,5 +32,18 @@ public class LikedListLivro {
 
             atual = atual.proximo;
         }
+    }
+
+    public Livro buscarLivro(String tituloBuscado) {
+        Node atual = head;
+
+        while (atual != null) {
+            if (atual.livro.getTitulo().equals(tituloBuscado)) {
+                return atual.livro;
+            } else
+               atual = atual.proximo;
+        }
+        System.out.println("Livro: " + tituloBuscado + ". não encontrado");
+        return null;
     }
 }

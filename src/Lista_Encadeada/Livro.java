@@ -1,3 +1,5 @@
+package Lista_Encadeada;
+
 public class Livro {
     String titulo;
     String autor;
@@ -8,4 +10,17 @@ public class Livro {
         this.autor = autor;
         this.ano = ano;
     }
+
+    public String getTitulo() {
+        return this.titulo;
+    }
+
+    public String getAutor() {
+        return this.autor;
+    }
+
+    public int getAno() {
+        return this.ano;
+    }
+
 }
